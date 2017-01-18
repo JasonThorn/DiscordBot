@@ -1,0 +1,24 @@
+{
+  "discord": {
+    "email": "",
+    "password": ""
+    },
+  "keywords": {
+    "Help": "!commands",
+    "Whip": "!Whip"
+  },
+  "giphy_key": "dc6zaTOxFJmzC",
+  "imgur_key": "",
+  "twitch": {
+    "client_id": "",
+    "username": "",
+    "password": "",
+    "scope": "user_read"
+  },
+  "database": {
+    "host": "127.0.0.1",
+    "database": "",
+    "user": "",
+    "password": ""
+  }
+}
