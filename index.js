@@ -1,8 +1,8 @@
 var env = require('./config.json'),
-    InsomBot = require('./insombot/index.js'),
+    JasBot = require('./DiscordBot/index.js'),
     Discord = require('discord.js');
 
-var ins = new InsomBot;
+var jas = new JasBot;
 var discordjs = new Discord.Client();
 
 discordjs.on("ready", function () {
@@ -11,11 +11,11 @@ discordjs.on("ready", function () {
 
 discordjs.on('message', function(msg)
 {
-    if (typeof ins.loadKeywords() !== 'undefined' && ins.loadKeywords().length > 0) {
-        ins.checkMessageForKeywords(msg.content, ins.loadKeywords(), function(keyword)
+    if (typeof jas.loadKeywords() !== 'undefined' && jas.loadKeywords().length > 0) {
+        jas.checkMessageForKeywords(msg.content, jas.loadKeywords(), function(keyword)
         {
             if (keyword != 0) {
-                ins.runKeywordFunction(ins.getKeyByValue(ins.keywords, keyword), keyword, msg, function(reply)
+                jas.runKeywordFunction(jas.getKeyByValue(jas.keywords, keyword), keyword, msg, function(reply)
                 {
                     discordjs.reply(msg, reply);
                 });
