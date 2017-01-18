@@ -1,0 +1,19 @@
+{
+  "name": "discordapp-make fun of cail",
+  "description": "A chat bot for your DiscordApp server",
+  "version": "0.1.0",
+  "author": {
+    "name": "Jas",
+    "url": "meme"
+  },
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "discord.js": "^3.6.2"
+  },
+  "keywords": [
+    "makefunofcail"
+  ]
+}
